@@ -46,6 +46,7 @@ Scripts para tunear el Mac
   `$ echo "[default]" | sudo tee -a /etc/nsmb.conf echo "dir_cache_off=yes" | sudo tee -a /etc/nsmb.conf`
  
 - Refirmar una app de Macbed
+
   `$ codesign --sign - --force --deep /path/to/app.app`
   
   
