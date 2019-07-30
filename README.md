@@ -49,4 +49,6 @@ Scripts para tunear el Mac
 
   `$ codesign --sign - --force --deep /path/to/app.app`
   
-  
+- Flush DNS Caches
+
+  `$ sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache;`
