@@ -48,7 +48,11 @@ Scripts para tunear el Mac
 - Refirmar una app de Macbed
 
   `$ codesign --sign - --force --deep /path/to/app.app`
-  
+
+- Refirmar app marcada como dañada en Catalina
+
+  `$ sudo xattr -rd com.apple.quarantine /Applications/TheApp.app`
+
 - Flush DNS Caches
 
   `$ sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache;`
