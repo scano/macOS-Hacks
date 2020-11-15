@@ -1,24 +1,30 @@
 # macOS Tunning
 
-Scripts para tunear o hacker macOS
+Scripts, tunning and hacks macOS
 
-#### Desactivar el gatekeeper en Mac
+#### Disable gatekeeper en macOs
 
 `$ sudo spctl --master-disable`
 
-#### Refirmar una app de Macbed
-
+#### Resign app on macOS
 `$ codesign --sign - --force --deep /path/to/app.app`
 
-#### Refirmar app marcada como dañada en Catalina
+#### Resign broken app
 
 `$ sudo xattr -rd com.apple.quarantine /Applications/TheApp.app`
 
-#### Desactivar el gestor de energía de las apps en Mac
+#### Disable font smothing in macOS Big Sur
+
+```
+$ defaults -currentHost write -g AppleFontSmoothing -int 0
+$ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+```
+
+#### Disable app power managament macOS
 
 `$ defaults write NSGlobalDomain NSAppSleepDisabled -bool YES`
 
-#### Mostrar los mensaje de arranque de la BIOS en Mac
+#### Show startup BIOS messages en macOS
 
 - Activar: `$ sudo nvram boot-args="-v"`
 - Desactivar: `$ sudo nvram boot-args=`
@@ -40,7 +46,7 @@ alias ll='ls -lha'
 
 ```
 
-#### Establecer Nano como editor predeterminado
+#### Set Nano as default terminal editor
 
 Editar el archivo `~/.bash_profile` o `~/.zshrc` según interprete de consola.
 Añadir:
@@ -51,9 +57,9 @@ export VISUAL="$EDITOR"
 ```
 
 
-#### Teclas de inicio y fin en los teclados extendidos USB en Mac
+#### Start and End key in macOS Extended Keyboards
 
-Desde el terminal:
+Open a terminal:
    
 ```
 $ cd ~/Library
@@ -62,7 +68,7 @@ $ cd KeyBindings
 $ nano DefaultKeyBinding.dict
 ```
 
-Incluir el texto incluido los bracers:
+Add all text:
 
 ```
 {
