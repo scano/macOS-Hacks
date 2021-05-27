@@ -29,6 +29,16 @@ $ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 - Activar: `$ sudo nvram boot-args="-v"`
 - Desactivar: `$ sudo nvram boot-args=`
 
+#### Improve SMB speed
+
+`$ sudo nano /etc/sysctl.conf`
+
+add:
+`net.inet.tcp.delayed_ack=0`
+
+Save and done!
+
+
 #### Tunning del ZSH con OhMyZSH
 
 Instalar desde https://ohmyz.sh/
