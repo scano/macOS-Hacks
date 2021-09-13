@@ -106,3 +106,9 @@ Add all text:
 #### Flush DNS Caches
 
 `$ sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache;`
+
+#### Clear Finder Icons Cache
+
+`$ sudo rm -rfv /Library/Caches/com.apple.iconservices.store; sudo find /private/var/folders \( -name com.apple.dock.iconcache -or -name com.apple.iconservices \) -exec rm -rfv {} \; ; sleep 3; sudo touch /Applications/*; killall Dock; killall Finder;`
+
+
