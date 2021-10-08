@@ -7,11 +7,13 @@ Scripts, tunning and hacks macOS
 `$ sudo spctl --master-disable`
 
 #### Resign app on macOS
+
 `$ codesign --sign - --force --deep /path/to/app.app`
 
 #### Resign broken app
 
 `$ sudo xattr -rd com.apple.quarantine /Applications/TheApp.app`
+`$ sudo xattr -cr /Applications/TheApp.app`
 
 #### Disable font smothing in macOS Big Sur
 
