@@ -22,6 +22,11 @@ Scripts, tunning and hacks macOS
 $ defaults -currentHost write -g AppleFontSmoothing -int 0
 $ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 ```
+#### Restart Bluetooth on Monterrey
+
+```
+$ sudo pkill bluetoothd
+```
 
 #### Disable app power managament macOS
 
