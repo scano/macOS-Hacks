@@ -56,7 +56,7 @@ Editar `~/.zshrc` y modicar o añadir las lineas a estos valores
 ```
 ZSH_THEME="avit"
 
-plugins=(git osx)
+plugins=(git macos)
 
 export EDITOR=nano
 export VISUAL="$EDITOR"
