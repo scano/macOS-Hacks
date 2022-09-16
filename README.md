@@ -1,4 +1,4 @@
-# macOS Tunning
+# macOS Hacks
 
 Scripts, tunning and hacks macOS
 
