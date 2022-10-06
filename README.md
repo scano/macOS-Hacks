@@ -34,8 +34,8 @@ $ sudo pkill bluetoothd
 
 #### Show startup BIOS messages en macOS
 
-- Activar: `$ sudo nvram boot-args="-v"`
-- Desactivar: `$ sudo nvram boot-args=`
+- Enable: `$ sudo nvram boot-args="-v"`
+- Disable: `$ sudo nvram boot-args=`
 
 #### Improve SMB speed
 
@@ -46,6 +46,11 @@ add:
 
 Save and done!
 
+Also (By Apple):
+
+`$ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE`
+
+Relogin to apply
 
 #### Tunning del ZSH con OhMyZSH
 
