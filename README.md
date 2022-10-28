@@ -2,6 +2,10 @@
 
 Scripts, tunning and hacks macOS
 
+#### Install Git
+
+`$ xcode-select --install`
+
 #### Disable gatekeeper en macOs
 
 `$ sudo spctl --master-disable`
