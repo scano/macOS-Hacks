@@ -63,7 +63,7 @@ Instalar desde https://ohmyz.sh/
 Editar `~/.zshrc` y modicar o añadir las lineas a estos valores
 
 ```
-ZSH_THEME="avit"
+ZSH_THEME="clean"
 
 plugins=(git macos)
 
