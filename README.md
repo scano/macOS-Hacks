@@ -63,7 +63,7 @@ Instalar desde https://ohmyz.sh/
 Editar `~/.zshrc` y modicar o añadir las lineas a estos valores
 
 ```
-ZSH_THEME="clean"
+ZSH_THEME="bira"
 
 plugins=(git macos)
 
