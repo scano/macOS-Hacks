@@ -68,7 +68,11 @@ ZSH_THEME="bira"
 plugins=(git macos)
 
 export EDITOR=nano
+#.s. for nano
 export VISUAL="$EDITOR"
+#.s. for VisualCode
+#export VISUAL="code --wait"
+
 alias ll='ls -lha'
 
 ```
