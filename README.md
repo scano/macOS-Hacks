@@ -128,4 +128,23 @@ Add all text:
 
 `$ sudo rm -rfv /Library/Caches/com.apple.iconservices.store; sudo find /private/var/folders \( -name com.apple.dock.iconcache -or -name com.apple.iconservices \) -exec rm -rfv {} \; ; sleep 3; sudo touch /Applications/*; killall Dock; killall Finder;`
 
+#### Cron Jobs after Catalina+
+
+Need to grant Full Disk Access to Cron, Crontab
+
+- Go to System Settings > Privacy & Security > Privacy > Full Disk Access
+- And press +
+- Navigate to the /usr/sbin folder with Finder. (You can do that with CMD + SHIFT + G and entering the path.)
+- Add `cron` app binary
+- Navigate to the /usr/bin folder with Finder. (You can do that with CMD + SHIFT + G and entering the path.)
+- Add `crontab` app binary
+
+You can do the same with *rsync* if needed.
+To show the executable path use `which` ex: `$ which rsync`
+
+
+
+
+
+
 
